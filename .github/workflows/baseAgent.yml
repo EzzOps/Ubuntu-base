@@ -25,4 +25,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ezzops/ubuntubase:latest
+          tags: ezzops/ubuntubase:${{ github.sha }}
