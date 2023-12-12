@@ -2,9 +2,9 @@ name: buildAgentDockerFile
 
 on:
   push:
-    branches: [ "EzzOps/DevopsPipelines" ]
+    branches: [ "dev" ]
   workflow_dispatch:
-    
+
 jobs:
   build:
     runs-on: ubuntu-latest
