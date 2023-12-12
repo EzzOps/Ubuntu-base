@@ -1,11 +1,4 @@
 FROM scratch
-
-WORKDIR /
-
-COPY ezzops /
-
-ENV LANG C.UTF-8
-
-RUN echo "Hello, this is a minimal Ubuntu server!" > /welcome.txt
-
+ARG LAUNCHPAD_BUILD_ARCH
+ADD ubuntu-*-oci-$LAUNCHPAD_BUILD_ARCH-root.tar.gz /
 CMD ["/bin/bash"]
